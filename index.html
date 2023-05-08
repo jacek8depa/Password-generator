@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;600;700&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h2>Password Generator</h2>
+        <div class="password-box">
+            <h1 id="new-password">P4$5W0rD!</h1>
+            <img id="copy" src="images/icon-copy.svg" alt="">
+        </div>
+        <section class="main-content">
+            <div class="slider-box">
+                <div class="flex-row">
+                    <p>Character Length</p>
+                    <span class="value">0</span>
+                </div>
+                <input type="range" min="0" max="20" value="0" class="slider" id="myRange">
+            </div>
+            <div class="check-boxes">
+                <div class="check-box-line">
+                    <label class="container">
+                        <input class="checkbox-default uppercase" type="checkbox">
+                        <span class="checkbox"></span>
+                    </label>
+                    <p>Include Uppercase Letters</p>
+                </div>
+                <div class="check-box-line">
+                    <label class="container">
+                        <input class="checkbox-default lowercase" type="checkbox">
+                        <span class="checkbox"></span>
+                    </label>
+                    <p>Include Lowercase Letters</p>
+                </div>
+                <div class="check-box-line">
+                    <label class="container">
+                        <input class="checkbox-default numbers" type="checkbox">
+                        <span class="checkbox"></span>
+                    </label>
+                    <p>Include Numbers</p>
+                </div>
+                <div class="check-box-line">
+                    <label class="container">
+                        <input class="checkbox-default symbols" type="checkbox">
+                        <span class="checkbox"></span>
+                    </label>
+                    <p>Include Symbols</p>
+                </div>
+            </div>
+            <div class="strength-box">
+                <p class="strenght">STRENTH</p>
+                <div class="flex-end">
+                    <h2 id="level"></h2>
+                    <div class="scale scale-empty flex-row">
+                        <div class="scale-bar-empty"></div>
+                        <div class="scale-bar-empty"></div>
+                        <div class="scale-bar-empty"></div>
+                        <div class="scale-bar-empty"></div>
+                    </div>
+                    <div class="scale scale-to-weak flex-row">
+                        <div class="scale-bar-toweak"></div>
+                        <div class="scale-bar-empty"></div>
+                        <div class="scale-bar-empty"></div>
+                        <div class="scale-bar-empty"></div>
+                    </div>
+                    <div class="scale scale-weak flex-row">
+                        <div class="scale-bar-weak"></div>
+                        <div class="scale-bar-weak"></div>
+                        <div class="scale-bar-empty"></div>
+                        <div class="scale-bar-empty"></div>
+                    </div>
+                    <div class="scale scale-medium flex-row">
+                        <div class="scale-bar-medium"></div>
+                        <div class="scale-bar-medium"></div>
+                        <div class="scale-bar-medium"></div>
+                        <div class="scale-bar-empty"></div>
+                    </div>
+                    <div class="scale scale-strong flex-row">
+                        <div class="scale-bar-strong"></div>
+                        <div class="scale-bar-strong"></div>
+                        <div class="scale-bar-strong"></div>
+                        <div class="scale-bar-strong"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="generate-btn flex-row">
+                <div class="generate-btn-box flex-row">
+                    <p class="dupa">GENERATE</p>
+                    <img class="icon-arrow-right dupa" src="images/icon-arrow-right.svg" alt="">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
